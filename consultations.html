@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Консультации банка — Biznes Ayol</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html"><span>B</span> Biznes <b>Ayol</b></a>
+  <button class="menu">☰</button>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="courses.html">Курсы</a>
+    <a href="business-plan.html">Бизнес-план</a>
+    <a href="tools.html">Финансовые инструменты</a>
+    <a href="digital.html">Цифровые навыки</a>
+    <a class="active" href="consultations.html">Консультации</a>
+    <a href="about.html">О платформе</a>
+  </nav>
+</header>
+
+<main>
+  <section class="pagehero">
+    <div class="wrap">
+      <span class="eyebrow">Поддержка на каждом этапе</span>
+      <h1>Консультационные услуги банка</h1>
+      <p>Подготовьте вопросы и данные о своём деле, чтобы разговор со специалистом был предметным и полезным.</p>
+    </div>
+  </section>
+
+  <section class="section wrap two">
+    <div>
+      <span class="eyebrow">С чем можно обратиться</span>
+      <h2>Обсудите подходящее решение</h2>
+
+      <div class="service">
+        <b>01　Финансирование бизнеса</b>
+        <p>Возможные кредитные продукты, цели финансирования, сроки и требования. Решение зависит от условий и оценки банка.</p>
+      </div>
+
+      <div class="service">
+        <b>02　Кредитная нагрузка</b>
+        <p>Доходы, расходы, существующие обязательства и способность обслуживать платежи.</p>
+      </div>
+
+      <div class="service">
+        <b>03　Расчётно-платёжные услуги</b>
+        <p>Бизнес-счёт, переводы, QR и POS-решения, комиссии и документооборот.</p>
+      </div>
+
+      <div class="service">
+        <b>04　Цифровые банковские сервисы</b>
+        <p>Онлайн-сервисы и безопасное управление операциями.</p>
+      </div>
+
+      <div class="service">
+        <b>05　Обучение предпринимателей</b>
+        <p>Навигация по материалам финансовой грамотности и подготовке бизнес-плана.</p>
+      </div>
+    </div>
+
+    <aside class="tip">
+      <h2>Подготовьтесь к встрече</h2>
+      <p>Отметьте, что уже подготовлено.</p>
+      <div class="checkgrid one">
+        <label><input type="checkbox"> Описание бизнеса и продукта</label>
+        <label><input type="checkbox"> Прогноз выручки и расходов</label>
+        <label><input type="checkbox"> Цель и сумма финансирования</label>
+        <label><input type="checkbox"> Действующие кредиты и обязательства</label>
+        <label><input type="checkbox"> Список вопросов специалисту</label>
+      </div>
+      <div class="notice">Не отправляйте через учебную форму паспортные данные, реквизиты карты, PIN-коды, пароли или SMS-коды.</div>
+    </aside>
+  </section>
+
+  <section class="band">
+    <div class="wrap two">
+      <div>
+        <span class="eyebrow">Подготовьте обращение</span>
+        <h2>Сформируйте запрос на консультацию</h2>
+        <p>Эта форма создаёт текст на экране, но не отправляет данные в банк и не бронирует встречу. Используйте официальный канал выбранного банка.</p>
+        <ul>
+          <li>Укажите тему и удобный способ связи.</li>
+          <li>Не добавляйте конфиденциальные данные.</li>
+          <li>Скопируйте текст и отправьте через официальный канал.</li>
+        </ul>
+      </div>
+
+      <form class="form" id="consult-form">
+        <label>Как к вам обращаться?
+          <input id="c-name" required placeholder="Ваше имя">
+        </label>
+
+        <label>Тема консультации
+          <select id="c-topic" required>
+            <option value="">Выберите тему</option>
+            <option>Финансирование бизнеса</option>
+            <option>Платёжные услуги и бизнес-счёт</option>
+            <option>Цифровые банковские сервисы</option>
+            <option>Финансовая грамотность</option>
+            <option>Другая тема</option>
+          </select>
+        </label>
+
+        <label>Способ связи
+          <select id="c-channel">
+            <option>Телефонный звонок</option>
+            <option>Встреча в отделении</option>
+            <option>Онлайн-консультация</option>
+          </select>
+        </label>
+
+        <label>Кратко опишите вопрос
+          <textarea id="c-message" rows="4" placeholder="Без конфиденциальных данных"></textarea>
+        </label>
+
+        <button class="btn">Сформировать обращение</button>
+        <div class="generated" id="c-result" hidden></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="notice">
+      <b>Обратите внимание.</b>
+      Biznes Ayol — демонстрационная образовательная платформа, не официальный сайт конкретного банка. Для реальной консультации используйте контакты выбранного банка.
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="bottom wrap">© 2026 Biznes Ayol <a href="index.html">На главную ↑</a></div>
+</footer>
+</body>
+</html>

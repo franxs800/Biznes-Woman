@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Финансовые инструменты — Biznes Ayol</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html"><span>B</span> Biznes <b>Ayol</b></a>
+  <button class="menu">☰</button>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="courses.html">Курсы</a>
+    <a href="business-plan.html">Бизнес-план</a>
+    <a class="active" href="tools.html">Финансовые инструменты</a>
+    <a href="digital.html">Цифровые навыки</a>
+    <a href="consultations.html">Консультации</a>
+    <a href="about.html">О платформе</a>
+  </nav>
+</header>
+
+<main>
+  <section class="pagehero">
+    <div class="wrap">
+      <span class="eyebrow">Считайте перед решением</span>
+      <h1>Финансовые инструменты для бизнеса</h1>
+      <p>Результаты ориентировочные и не заменяют консультацию бухгалтера или банка.</p>
+    </div>
+  </section>
+
+  <section class="section wrap toolgrid">
+    <article class="card">
+      <span class="icon mint">↗</span>
+      <span class="eyebrow">Инструмент 01</span>
+      <h2>Калькулятор прибыли</h2>
+      <p>Сколько остаётся после основных ежемесячных расходов?</p>
+
+      <form id="profit-form">
+        <label>Выручка за месяц (сум)
+          <input id="revenue" type="number" min="0" value="12000000" required>
+        </label>
+        <label>Переменные расходы (сум)
+          <input id="variable" type="number" min="0" value="5000000" required>
+        </label>
+        <label>Постоянные расходы (сум)
+          <input id="fixed" type="number" min="0" value="1500000" required>
+        </label>
+        <button class="btn">Рассчитать</button>
+      </form>
+
+      <div class="result" id="profit-result">
+        Ориентировочная прибыль
+        <strong>5 500 000 сум</strong>
+        <small>Маржинальность: 45,8%</small>
+      </div>
+    </article>
+
+    <article class="card">
+      <span class="icon lilac">▦</span>
+      <span class="eyebrow">Инструмент 02</span>
+      <h2>Месячный бюджет</h2>
+      <p>Распределите доступные деньги и проверьте остаток.</p>
+
+      <form id="budget-form">
+        <label>Доступные средства
+          <input id="income" type="number" min="0" value="10000000" required>
+        </label>
+        <label>Товар / материалы
+          <input id="stock" type="number" min="0" value="4000000" required>
+        </label>
+        <label>Аренда / коммунальные
+          <input id="rent" type="number" min="0" value="1500000" required>
+        </label>
+        <label>Зарплата / услуги
+          <input id="salary" type="number" min="0" value="2000000" required>
+        </label>
+        <label>Прочие расходы
+          <input id="other" type="number" min="0" value="500000" required>
+        </label>
+        <button class="btn">Составить бюджет</button>
+      </form>
+
+      <div class="result" id="budget-result">
+        Остаток после расходов
+        <strong>2 000 000 сум</strong>
+        <small>Не забудьте про налоги и резерв.</small>
+      </div>
+    </article>
+
+    <article class="card">
+      <span class="icon peach">%</span>
+      <span class="eyebrow">Инструмент 03</span>
+      <h2>Кредитный платёж</h2>
+      <p>Предварительный аннуитетный расчёт без комиссий и страхования.</p>
+
+      <form id="loan-form">
+        <label>Сумма кредита (сум)
+          <input id="amount" type="number" min="1" value="50000000" required>
+        </label>
+        <label>Годовая ставка, %
+          <input id="rate" type="number" min="0" max="100" step=".1" value="24" required>
+        </label>
+        <label>Срок, месяцев
+          <input id="months" type="number" min="1" max="360" value="36" required>
+        </label>
+        <button class="btn">Рассчитать платёж</button>
+      </form>
+
+      <div class="result" id="loan-result">
+        Платёж в месяц
+        <strong>1 961 000 сум</strong>
+        <small>Ориентировочная оценка.</small>
+      </div>
+    </article>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <h2>Финансовый чек-лист на неделю</h2>
+      <p>Отмечайте пункты по мере выполнения.</p>
+      <div class="checkgrid">
+        <label><input type="checkbox"> Записать поступления и расходы.</label>
+        <label><input type="checkbox"> Сверить остатки товара и материалов.</label>
+        <label><input type="checkbox"> Проверить долги клиентов и платежи поставщикам.</label>
+        <label><input type="checkbox"> Отложить средства на обязательные платежи и резерв.</label>
+        <label><input type="checkbox"> Сравнить продажи с планом.</label>
+      </div>
+      <div class="notice">
+        Не принимайте решение о кредите только по калькулятору. Оцените денежный поток и обсудите полную стоимость кредита с банковским специалистом.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="bottom wrap">© 2026 Biznes Ayol <a href="index.html">На главную ↑</a></div>
+</footer>
+</body>
+</html>

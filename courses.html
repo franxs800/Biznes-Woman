@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Курсы — Biznes Ayol</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html"><span>B</span> Biznes <b>Ayol</b></a>
+  <button class="menu">☰</button>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a class="active" href="courses.html">Курсы</a>
+    <a href="business-plan.html">Бизнес-план</a>
+    <a href="tools.html">Финансовые инструменты</a>
+    <a href="digital.html">Цифровые навыки</a>
+    <a href="consultations.html">Консультации</a>
+    <a href="about.html">О платформе</a>
+  </nav>
+</header>
+
+<main>
+  <section class="pagehero">
+    <div class="wrap">
+      <span class="eyebrow">Учитесь и применяйте</span>
+      <h1>Курсы для развития вашего бизнеса</h1>
+      <p>Короткие модули с практическими заданиями. Выберите тему для своей текущей задачи.</p>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="filters">
+      <div>
+        <label for="search">Найти курс</label>
+        <input id="search" placeholder="Например, бюджет или продажи">
+      </div>
+      <div>
+        <label for="level">Уровень</label>
+        <select id="level">
+          <option value="all">Все уровни</option>
+          <option value="start">Начальный</option>
+          <option value="grow">Для развития</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid courses" id="courses">
+      <article class="card course" data-level="start" data-key="финансовая грамотность бюджет прибыль расходы">
+        <div class="cover mint">01 / ФИНАНСЫ<h2>Деньги под контролем</h2></div>
+        <small>Начальный · 4 урока · 60 мин</small>
+        <h3>Финансовая грамотность</h3>
+        <p>Отделяем личные деньги от бизнес-денег, считаем прибыль и составляем бюджет.</p>
+        <details>
+          <summary>Программа</summary>
+          <ol>
+            <li>Доходы, расходы и прибыль.</li>
+            <li>Личный и бизнес-бюджет.</li>
+            <li>Финансовая подушка.</li>
+            <li>Практика: бюджет на месяц.</li>
+          </ol>
+        </details>
+        <button class="btn secondary start-course" data-title="Финансовая грамотность">Начать курс →</button>
+      </article>
+
+      <article class="card course" data-level="start" data-key="бизнес план идея клиент расходы">
+        <div class="cover lilac">02 / ПЛАНИРОВАНИЕ<h2>Идея в бизнес-плане</h2></div>
+        <small>Начальный · 5 уроков · 90 мин</small>
+        <h3>Как составить бизнес-план</h3>
+        <p>Определите клиентов, продукт, стартовые вложения, продажи и точку безубыточности.</p>
+        <details>
+          <summary>Программа</summary>
+          <ol>
+            <li>Целевой клиент.</li>
+            <li>Продукт и преимущества.</li>
+            <li>Маркетинг и продажи.</li>
+            <li>Расходы и прогноз дохода.</li>
+            <li>Риски и план действий.</li>
+          </ol>
+        </details>
+        <button class="btn secondary start-course" data-title="Как составить бизнес-план">Начать курс →</button>
+      </article>
+
+      <article class="card course" data-level="grow" data-key="продажи маркетинг клиент сервис продвижение">
+        <div class="cover peach">03 / ПРОДАЖИ<h2>Клиент возвращается</h2></div>
+        <small>Для развития · 4 урока · 75 мин</small>
+        <h3>Продажи и работа с клиентами</h3>
+        <p>Упаковка предложения, общение с клиентом, повторные продажи и сервис.</p>
+        <details>
+          <summary>Программа</summary>
+          <ol>
+            <li>Портрет клиента.</li>
+            <li>Ценность и цена.</li>
+            <li>Сценарий общения.</li>
+            <li>Отзывы и повторные продажи.</li>
+          </ol>
+        </details>
+        <button class="btn secondary start-course" data-title="Продажи и работа с клиентами">Начать курс →</button>
+      </article>
+
+      <article class="card course" data-level="start" data-key="цифровая безопасность платежи интернет банк мошенничество">
+        <div class="cover blue">04 / БЕЗОПАСНОСТЬ<h2>Безопасный цифровой бизнес</h2></div>
+        <small>Начальный · 3 урока · 45 мин</small>
+        <h3>Цифровая безопасность</h3>
+        <p>Безопасное использование онлайн-банкинга, QR-платежей и защита от мошенников.</p>
+        <details>
+          <summary>Программа</summary>
+          <ol>
+            <li>Пароли и двухфакторная защита.</li>
+            <li>Распознавание мошенничества.</li>
+            <li>Безопасные платежи.</li>
+          </ol>
+        </details>
+        <button class="btn secondary start-course" data-title="Цифровая безопасность">Начать курс →</button>
+      </article>
+
+      <article class="card course" data-level="grow" data-key="управление запасы команда поставщики процессы">
+        <div class="cover yellow">05 / УПРАВЛЕНИЕ<h2>Бизнес без хаоса</h2></div>
+        <small>Для развития · 4 урока · 70 мин</small>
+        <h3>Операционное управление</h3>
+        <p>Учёт запасов, работа с поставщиками, контроль задач и планирование недели.</p>
+        <details>
+          <summary>Программа</summary>
+          <ol>
+            <li>Бизнес-процессы.</li>
+            <li>Учёт товара и материалов.</li>
+            <li>Планирование задач.</li>
+            <li>Контроль качества.</li>
+          </ol>
+        </details>
+        <button class="btn secondary start-course" data-title="Операционное управление">Начать курс →</button>
+      </article>
+
+      <article class="card course" data-level="grow" data-key="кредит финансирование банк заявка документы проценты">
+        <div class="cover rose">06 / ФИНАНСИРОВАНИЕ<h2>Готовность к диалогу с банком</h2></div>
+        <small>Для развития · 3 урока · 50 мин</small>
+        <h3>Подготовка к банковской консультации</h3>
+        <p>Какие вопросы задать, как подготовить данные о бизнесе и оценить кредитную нагрузку.</p>
+        <details>
+          <summary>Программа</summary>
+          <ol>
+            <li>Цель финансирования.</li>
+            <li>Доходы, расходы и денежный поток.</li>
+            <li>Документы и вопросы специалисту.</li>
+          </ol>
+        </details>
+        <button class="btn secondary start-course" data-title="Подготовка к банковской консультации">Начать курс →</button>
+      </article>
+    </div>
+
+    <p id="no-courses" hidden>Курсы не найдены. Попробуйте изменить поиск.</p>
+  </section>
+
+  <section class="band">
+    <div class="wrap split">
+      <div>
+        <h2>Практика важнее теории</h2>
+        <p>После каждого урока сделайте маленькое действие для своего бизнеса: внесите расходы в таблицу, поговорите с клиентом или проверьте цену.</p>
+      </div>
+      <div class="tip">
+        <b>Задание на сегодня</b>
+        <p>Запишите три главных расхода бизнеса за последнюю неделю и отметьте, какие можно оптимизировать без потери качества.</p>
+        <a href="tools.html">Перейти к инструментам →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="bottom wrap">© 2026 Biznes Ayol <a href="index.html">На главную ↑</a></div>
+</footer>
+</body>
+</html>
